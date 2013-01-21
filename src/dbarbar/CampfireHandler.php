@@ -6,6 +6,9 @@ use Monolog\Handler\AbstractHandler;
 use rcrowe\Campfire;
 use Monolog\Logger;
 
+/**
+ * Provides a handler for Monolog that sends messages to a Campfire room.
+ */
 class CampfireHandler extends AbstractHandler
 {
     protected $campfire;
