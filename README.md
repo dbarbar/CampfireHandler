@@ -2,6 +2,10 @@
 
 This is my first attempt at making a Campfire handler for Monolog.
 
+## Build Status
+
+[![Build Status](https://travis-ci.org/dbarbar/CampfireHandler.png?branch=master)](undefined)
+
 ## Usage Example
 
 ````php
