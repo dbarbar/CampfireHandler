@@ -3,6 +3,7 @@
     "description": "A handler for Monolog that sends messages to a Campfire room.",
     "keywords": ["log", "logging", "Campfire"],
     "homepage": "https://github.com/dbarbar/CampfireHandler",
+    "license": "MIT",
     "require": {
         "monolog/monolog": "1.3.*",
         "rcrowe/campfire": "0.1.*"
