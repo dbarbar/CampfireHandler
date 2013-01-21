@@ -18,7 +18,7 @@ $campfireConfig = array(
   'room' => 'room id number',
   'subdomain' => 'sudbdomain/account name',
   );
-$handler = new CampfireHandler(Logger::NOTICE, false, new Campfire($campfireConfig));
+$handler = new CampfireHandler(new Campfire($campfireConfig));
 
 $log->pushHandler($handler);
 

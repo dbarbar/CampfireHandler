@@ -11,13 +11,11 @@ class CampfireHandler extends AbstractHandler
     protected $campfire;
 
     /**
-     * Campfire $config = array('subdomain' => '', 'room' => '', 'key' => '')
-     * Room is numeric.
+     * @param Campfire $campfire An instance of the Campfire library.
      * @param integer $level  The minimum logging level at which this handler will be triggered
      * @param Boolean $bubble Whether the messages that are handled can bubble up the stack or not
-     * @param array   $config Pass in the required config params to initalise the Campfire library.
      */
-    public function __construct($level = Logger::DEBUG, $bubble = true, Campfire $campfire)
+    public function __construct(Campfire $campfire, $level = Logger::DEBUG, $bubble = true)
     {
         $this->level = $level;
         $this->bubble = $bubble;
