@@ -6,11 +6,9 @@ use Monolog\Handler\AbstractHandler;
 use rcrowe\Campfire;
 use Monolog\Logger;
 
-
 class CampfireHandler extends AbstractHandler
 {
   protected $campfire;
-
 
   /**
    *
@@ -50,6 +48,7 @@ class CampfireHandler extends AbstractHandler
      */
     $formatted_message = $record['channel'] . ' - ' . $record['level_name'] . ' - ' . $record['datetime'] . ' - ' . $record['message'];
     $this->campfire->send($formatted_message);
+
     return $this->bubble;
   }
 }
