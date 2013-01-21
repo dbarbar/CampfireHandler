@@ -1,5 +1,5 @@
 {
-    "name": "dbarbar/campfire-handler",
+    "name": "dbarbar/campfire-monolog-handler",
     "description": "A handler for Monolog that sends messages to a Campfire room.",
     "keywords": ["log", "logging", "Campfire"],
     "homepage": "https://github.com/dbarbar/CampfireHandler",
